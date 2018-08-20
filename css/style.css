@@ -635,6 +635,8 @@ h2 {
   padding: 10px;
   color: #fff;
   background-color: #f7b4bd;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .calc__link img {
   display: block;
@@ -651,6 +653,10 @@ h2 {
 .calc__link:hover,
 .calc__link:active {
   text-decoration: underline;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .calender h2 {
   text-align: right;
@@ -724,5 +730,114 @@ h2 {
 }
 .footer {
   min-height: 60px;
+  color: #fff;
   background-color: #81d1de;
+}
+@media (max-width: 1170px) {
+  .wrapper {
+    width: 90%;
+  }
+  .calc__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .calc__item {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1022px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .promo p {
+    font-size: 18px;
+    max-width: 350px;
+  }
+  .calender__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .promo p {
+    font-size: 16px;
+    max-width: 250px;
+  }
+  .calender__list {
+    width: 100%;
+    max-width: 474px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .calender__list li {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .logo img {
+    height: 50px;
+    margin-right: 5px;
+  }
+  .logo p {
+    font-size: 24px;
+  }
+  .social__link {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .promo {
+    margin-bottom: 20px;
+  }
+  .header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .calc__list {
+    padding-top: 20px;
+  }
+  .calc__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .calc__link {
+    width: 100%;
+  }
+  .calc__link p {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .calender__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .calender__list li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }
