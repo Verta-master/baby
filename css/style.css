@@ -1016,6 +1016,9 @@ span.breadcrumbs__link:active {
     padding-left: 0;
     padding-right: 0;
   }
+  .calender h2 {
+    text-align: left;
+  }
 }
 @media (max-width: 700px) {
   h1 {
@@ -1038,6 +1041,18 @@ span.breadcrumbs__link:active {
   .calender__list li {
     margin-left: 0;
     margin-right: 10px;
+  }
+  .calender__list--sidebar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calender__list--sidebar li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .calender__list--sidebar li:nth-child(8n) {
+    margin-right: 5px;
   }
 }
 @media (max-width: 480px) {
@@ -1115,13 +1130,5 @@ span.breadcrumbs__link:active {
   }
   .title {
     font-size: 18px;
-  }
-  .calender__list--sidebar {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .calender__list--sidebar li:nth-child(8n) {
-    margin-right: 5px;
   }
 }
