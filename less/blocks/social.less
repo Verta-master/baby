@@ -1,0 +1,35 @@
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  border-radius: 2px;
+  border: 1px solid @pink;
+  .transition();
+  
+  svg {
+    fill: @pink;
+    width: 25px;
+    height: auto;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    border-color: @mint;
+    .transition();
+    
+    svg {
+      fill: @mint;
+      .transition();
+    }
+  }
+}
