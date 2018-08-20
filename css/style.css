@@ -454,6 +454,7 @@ h4,
 h5,
 h6 {
   font-family: "Roboto Slab", "Arial", sans-serif;
+  line-height: 1.2;
 }
 h1 {
   margin-top: 0;
@@ -530,7 +531,7 @@ h2 {
 .logo img {
   display: block;
   height: 80px;
-  width: auto;
+  width: 83px;
   margin-right: 10px;
 }
 .logo p {
@@ -916,6 +917,28 @@ h2 {
 .form__line span {
   width: 25%;
 }
+.breadcrumbs__link {
+  position: relative;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.breadcrumbs__link::after {
+  content: "/";
+  position: absolute;
+  bottom: -3px;
+  right: -17px;
+}
+.breadcrumbs__link:hover,
+.breadcrumbs__link:active {
+  text-decoration: underline;
+}
+span.breadcrumbs__link::after {
+  display: none;
+}
+span.breadcrumbs__link:hover,
+span.breadcrumbs__link:active {
+  text-decoration: none;
+}
 @media (max-width: 1170px) {
   .wrapper {
     width: 90%;
@@ -926,6 +949,28 @@ h2 {
   }
   .calc__item {
     margin-right: 0;
+  }
+  .page {
+    width: 500px;
+    padding-bottom: 50px;
+  }
+  .calc__link--sidebar p,
+  .title {
+    font-size: 20px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__input,
+  .form__select,
+  .form__label {
+    font-size: 16px;
+  }
+  .form__output {
+    padding: 20px;
+  }
+  .page__img {
+    display: none;
   }
 }
 @media (max-width: 1022px) {
@@ -950,6 +995,26 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .wrapper-internal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .page {
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .breadcrumbs__link {
+    font-size: 16px;
+  }
+  .wrapper-internal {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (max-width: 700px) {
@@ -977,6 +1042,7 @@ h2 {
 }
 @media (max-width: 480px) {
   .logo img {
+    width: 52px;
     height: 50px;
     margin-right: 5px;
   }
@@ -1021,6 +1087,41 @@ h2 {
   }
   .calender__list li {
     margin-left: 5px;
+    margin-right: 5px;
+  }
+  .breadcrumbs {
+    max-width: 250px;
+  }
+  .form__input,
+  .form__label,
+  .form__select,
+  .form__field {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__label {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .form__btn {
+    margin-right: auto;
+  }
+  .form__field {
+    margin-bottom: 25px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .calender__list--sidebar {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calender__list--sidebar li:nth-child(8n) {
     margin-right: 5px;
   }
 }
