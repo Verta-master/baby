@@ -8,6 +8,28 @@
   .calc__item {
     margin-right: 0;
   }
+  .page {
+    width: 500px;
+    padding-bottom: 50px;
+  }
+  .calc__link--sidebar p,
+  .title {
+    font-size: 20px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__input,
+  .form__select,
+  .form__label {
+    font-size: 16px;
+  }
+  .form__output {
+    padding: 20px;
+  }
+  .page__img {
+    display: none;
+  }
 }
 
 @media (max-width: 1022px) {
@@ -25,6 +47,23 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+  .wrapper-internal {
+    flex-direction: column-reverse;
+  }
+  .page {
+    width: 100%;
+  }
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .breadcrumbs__link {
+    font-size: 16px;
+  }
+  .wrapper-internal {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -53,6 +92,7 @@
 
 @media (max-width: 480px) {
   .logo img {
+    width: 52px;
     height: 50px;
     margin-right: 5px;
   }
@@ -96,6 +136,40 @@
     
     li {
       margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .breadcrumbs {
+    max-width: 250px;
+  }
+  .form__input,
+  .form__label,
+  .form__select,
+  .form__field {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__label {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .form__btn {
+    margin-right: auto;
+  }
+  .form__field {
+    margin-bottom: 25px;
+  }
+  .sidebar {
+    width: 100%;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .calender__list--sidebar {
+    justify-content: center;
+    
+    li:nth-child(8n) {
       margin-right: 5px;
     }
   }
