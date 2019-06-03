@@ -961,6 +961,10 @@ span.breadcrumbs__link:active {
   padding-left: 15px;
   padding-right: 15px;
 }
+.page--narrow img {
+  width: 100%;
+  height: auto;
+}
 .leftside {
   width: 20%;
 }
@@ -1123,6 +1127,9 @@ span.breadcrumbs__link:active {
   .page__img {
     display: none;
   }
+  .calc__link--sidebar p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 1022px) {
   h1 {
@@ -1169,6 +1176,69 @@ span.breadcrumbs__link:active {
   }
   .calender h2 {
     text-align: left;
+  }
+  .page--narrow {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .leftside {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 360px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sidebar--narrow {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 360px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .calc__link--sidebar p {
+    font-size: 20px;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 19px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #81d1de;
+  }
+  .menu {
+    position: relative;
+    padding: 10px 15px;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross.svg);
+    background-size: 24px 24px;
+  }
+  .menu__item {
+    border-top: 1px solid #fff;
+  }
+  .menu__sublist {
+    display: block;
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-align: center;
   }
 }
 @media (max-width: 700px) {
@@ -1286,5 +1356,27 @@ span.breadcrumbs__link:active {
   }
   .title {
     font-size: 18px;
+  }
+}
+@media (max-width: 665px) {
+  .header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logo {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .header__reg {
+    margin-right: auto;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .social {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 }
